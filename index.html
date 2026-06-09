@@ -521,7 +521,7 @@
       
       let valorSistema = converterParaFloat(numeroSistema);
       if (valorSistema > 0) valorSistema = -valorSistema;
-      let valorSistemaFormatado = valorSistema.toString().replace('.', ',');
+      let valorSistemaFormatado = valorSistema.toFixed(2);
       
       const textoTec = document.getElementById('textoTecnico').value;
       let anotacao;
@@ -544,7 +544,7 @@
         if (precisaVerificar) {
           anotacao = `⚠️ Potência recebida (dBm) ${valorSistemaFormatado}, verificar sinal`;
           classe = 'alerta';
-          mostrarMensagem(`⚠️ Alerta! Diferença de ${diferencaAbs.toFixed(2).replace('.', ',')} dBm`, 'erro');
+          mostrarMensagem(`⚠️ Alerta! Diferença de ${diferencaAbs.toFixed(2)} dBm`, 'erro');
         } else {
           anotacao = `✅ Potência recebida (dBm) ${valorSistemaFormatado}`;
           classe = 'ok';
