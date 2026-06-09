@@ -539,7 +539,7 @@
         
         const diferenca = valorSistema - valorTecnico;
         const diferencaAbs = Math.abs(diferenca);
-        const precisaVerificar = (valorSistema < valorTecnico) && (diferencaAbs > 2.50);
+        const precisaVerificar = (valorSistema < valorTecnico) && (diferencaAbs > 2.00);
         
         if (precisaVerificar) {
           anotacao = `⚠️ Potência recebida (dBm) ${valorSistemaFormatado}, verificar sinal`;
