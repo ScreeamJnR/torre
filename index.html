@@ -348,18 +348,18 @@
       <div class="card-body">
         <div class="dica">
           <i>⚡</i> <strong>Como usar:</strong><br>
-          • <strong>Preencha os dois campos</strong> → Faz a comparação e gera alerta se diferença > 2.00 dBm<br>
+          • <strong>Preencha os dois campos</strong> → Faz a comparação e gera alerta se diferença for maior que > 2.00 dBm<br>
           • <strong>Preencha só o campo do sistema</strong> → Gera a anotação normal sem comparação
         </div>
 
         <div class="form-group">
-          <label>📋 O que o TÉCNICO falou (opcional)</label>
-          <textarea id="textoTecnico" rows="2" placeholder="Ex: Sinal: 23 dBm (deixe vazio se não quiser comparar)"></textarea>
+          <label>📋 O que o TÉCNICO informou (opcional)</label>
+          <textarea id="textoTecnico" rows="2" placeholder="Ex: Sinal: -23 dBm (deixe vazio se não quiser comparar)"></textarea>
         </div>
 
         <div class="form-group">
           <label>📋 O que consta no SISTEMA (obrigatório)</label>
-          <textarea id="textoSistema" rows="2" placeholder="Ex: RX: 28 dBm"></textarea>
+          <textarea id="textoSistema" rows="2" placeholder="Ex: RX: -28 dBm"></textarea>
         </div>
 
         <button class="btn" id="btnComparar">
